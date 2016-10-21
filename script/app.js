@@ -10,8 +10,6 @@ var findCategorie = function(array,id){
 
 
  (function(){
-  var DATA = "data/categories.json";
-  var LOGO = "data/logos.json";
   var app= angular.module("myApp",["ngRoute"]);
       app.config(["$routeProvider"/*,"locationProvider"*/, function($routeProvider/*,$locationProvider*/){
         /*$locationProvider.html5Mode(true);*/
@@ -40,10 +38,10 @@ var findCategorie = function(array,id){
             templateUrl:"components/header.html"
         };
       });
-      app.directive("ngPartners", function(){ 
+      app.directive("ngCategories", function(){ 
         return{ 
             restrict:"AEC",
-            templateUrl:"components/partners.html"
+            templateUrl:"components/categories.html"
         };
       });
       app.directive("ngFooter", function(){ 
@@ -59,12 +57,7 @@ var findCategorie = function(array,id){
       })
 
       app.controller("MainCtrl", function($scope,$http){
-        $http.get(DATA).then(function(data){ 
-            $scope.categories = data.data
-        });
-        $http.get(LOGO).then(function(img){ 
-            $scope.logos = img.data
-        });
+
       });
       app.controller("showController",function($scope,$routeParams,$http){ 
         $http.get(DATA).then(function(id){ 

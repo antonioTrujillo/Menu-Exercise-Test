@@ -3,12 +3,16 @@
 <head>
 	<meta charset="UTF-8">
 	<title>BQ TEST</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
 </head>
 <body>
-    <div ng-header></div ng-header>
-    <div ng-view></div> 
-   	<div ng-footer></div ng-footer>
+    <ng-header></ng-header>
+    <section>
+    <ng-categories></ng-categories>
+    <div ng-view></div>
+    </section>
+   	<ng-footer></ng-footer>
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
 <script type="text/javascript" src="js/angular-resource.min.js"></script>
