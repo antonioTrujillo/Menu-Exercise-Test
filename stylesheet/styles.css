@@ -9,16 +9,19 @@ header {
   display: table; }
 
 .navCategories {
-  width: 241px;
-  height: 800px;
-  float: left;
-  margin: 15px; }
+  width: 20%;
+  height: auto;
+  float: left; }
 
 .prueba {
-  max-width: 100%;
-  height: 800px;
-  margin-left: 20%;
+  max-width: 80%;
+  float: left;
   background-color: yellow; }
+
+.backgroundBody {
+  background-color: #f3f3f3;
+  width: 100%;
+  display: inline-block; }
 
 ol, ul {
   margin-bottom: 0px !important;
@@ -51,7 +54,7 @@ nav li ul {
   min-width: 20%; }
 
 .ulCategories {
-  width: 241px; }
+  width: 20%; }
 
 nav li:hover > ul {
   display: block; }
@@ -80,7 +83,8 @@ nav li ul li ul {
 footer {
   background-color: #333;
   bottom: 0;
-  width: 100%; }
+  width: 100%;
+  display: inline-block; }
 
 .titleFooter {
   text-align: center;

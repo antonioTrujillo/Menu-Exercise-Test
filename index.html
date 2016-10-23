@@ -2,17 +2,21 @@
 <html ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width">
 	<title>BQ TEST</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
 </head>
 <body>
     <ng-header></ng-header>
-    <section>
+    <section class="backgroundBody">
     <ng-categories></ng-categories>
     <div ng-view></div>
+    <ng-footer></ng-footer>
     </section>
-   	<ng-footer></ng-footer>
+   	
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
 <script type="text/javascript" src="js/angular-resource.min.js"></script>
