@@ -1,0 +1,36 @@
+<section class="boxCatalogue">
+<section>
+	<h1>Catalogue</h1>
+</section>
+
+<section id="flexBox">
+	<article class="column">
+		<div class="horizontal">
+			<button ng-click="toggleCustom()">Product</button>
+		</div>
+	</article>
+	<article class="column">
+		<div class="horizontal">
+			<button>Product</button>
+		</div>
+	</article>
+	<article class="column">
+		<div class="horizontal">
+			<button>Product</button>
+		</div>
+	</article>
+	<article class="column">
+		<div class="horizontal">
+			<button>Product</button>
+		</div>
+	</article>
+</section>
+</section>
+
+<span ng-hide="custom">From:
+            <input type="text" id="from" />
+        </span>
+        <span ng-hide="custom">To:
+            <input type="text" id="to" />
+        </span>
+        <span ng-show="custom"></span>

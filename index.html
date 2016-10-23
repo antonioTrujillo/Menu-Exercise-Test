@@ -2,6 +2,7 @@
 <html ng-app="myApp">
 <head>
 	<meta charset="UTF-8">
+	<base href="/"></base>
 	<meta name="HandheldFriendly" content="true" />
 	<meta name="MobileOptimized" content="320" />
 	<meta name="viewport" content="width=device-width">
@@ -11,12 +12,12 @@
 </head>
 <body>
     <ng-header></ng-header>
-    <section class="backgroundBody">
+    <section class="backgroundBody view">
     <ng-categories></ng-categories>
-    <div ng-view></div>
+    <ng-view></ng-view>
     <ng-footer></ng-footer>
     </section>
-   	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/angular.min.js"></script>
 <script type="text/javascript" src="js/angular-route.min.js"></script>
 <script type="text/javascript" src="js/angular-resource.min.js"></script>

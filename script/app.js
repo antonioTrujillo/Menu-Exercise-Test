@@ -1,37 +1,20 @@
 
-var findCategorie = function(array,id){
-  for(var i = 0, m=null; i<array.length; ++i){ 
-      if(array[i].id == id){ 
-        return array [i];
-        break;
-      };
-  };
-};
-
 
  (function(){
   var app= angular.module("myApp",["ngRoute"]);
-      app.config(["$routeProvider"/*,"locationProvider"*/, function($routeProvider/*,$locationProvider*/){
-        /*$locationProvider.html5Mode(true);*/
+      app.config(["$routeProvider","$locationProvider",function($routeProvider,$locationProvider){
+	$locationProvider.html5Mode(true);
         $routeProvider.when("/",{ 
           templateUrl:"templates/home.html",
           controller:"MainCtrl",
           controllerAs:"home"
         });
-        $routeProvider.when("/showCategories/:categorieId",{ 
-          templateUrl:"templates/show.html",
-          controller:"showController"
-        });
-        $routeProvider.when("/showForm",{ 
-          templateUrl:"templates/form.html"
+        $routeProvider.when("/showCatalogue",{ 
+          templateUrl:"templates/catalogue1.html",
+          controller:"MainCtrl",
+          controllerAs:"catalogue"
         });
       }]);
-      app.directive("postDirective", function(){ 
-        return{ 
-            restrict:"AE",
-            templateUrl:"components/card.html"
-        };
-      });
       app.directive("ngHeader", function(){ 
         return{ 
             restrict:"AEC",
@@ -50,21 +33,13 @@ var findCategorie = function(array,id){
             templateUrl:"components/footer.html"
         };
       });
-      app.directive("ngPhotos", function(){ 
-        return{ 
-            restrict:"AEC",
-            templateUrl:"components/photos.html"        }
-      })
 
-      app.controller("MainCtrl", function($scope,$http){
+      app.controller("MainCtrl", function($scope){
+   		$scope.custom = true;
+        $scope.toggleCustom = function() {
+            $scope.custom = $scope.custom === false ? true: false;
+        };
+      }); 
 
-      });
-      app.controller("showController",function($scope,$routeParams,$http){ 
-        $http.get(DATA).then(function(id){ 
-          var Id=$routeParams.categorieId;
-          var categorie= id.data;
-          $scope.categorie= findCategorie (categorie,Id)
-        });
-      });  
   })();
   
