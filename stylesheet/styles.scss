@@ -2,6 +2,16 @@
 	margin:0px;
 	padding:0px;
 }
+h1 {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	font-weight: bold !important;
+	margin: 0px !important;
+	text-align: center !important;
+    font-size: 26px !important;
+    margin-top: 45px !important;
+    margin-bottom: 25px !important;
+}
 
 header {
 	//position: fixed;
@@ -88,6 +98,7 @@ nav li ul li ul {
 	list-style-type: none;
 }
 
+
 .styleSubmenu {
 		list-style-type: none !important;
 	}
@@ -149,6 +160,20 @@ article ol li {
 	width: 25%;
 	float: left;
 }
+.titleCatalogue .titleFeatured {
+	text-align: center;
+    font-size: 26px;
+    margin-top: 45px !important;
+    margin-bottom: 25px !important;
+}
+.titleCategories {
+	font-size: 26px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 45px ;
+    margin-bottom: 25px;
+
+}
 
 // F L E X  B O X 
 
@@ -157,7 +182,7 @@ article ol li {
   display: -webkit-flex;
   flex-flow: row wrap;
   -webkit-flex-flow: row wrap;
-  margin: 70px 40px;
+  margin: 0px 40px;
   justify-content: center;
 }
 
@@ -190,9 +215,16 @@ article ol li {
     width: 132px;
     height: 182px;
     color: white;
-    margin: 10px 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    &:hover {
+    	background-color: #666;
+    }
 }
 button {
+	width: 132px;
+    height: 182px; 
 	background-color: transparent !important;
     border: transparent !important;
     font-size: x-large !important;
@@ -210,3 +242,10 @@ button {
     max-width: 571px;
   }
 }
+.productImg{
+	width: 314px;
+	height: 183px;
+	float: left;
+}
+
+
