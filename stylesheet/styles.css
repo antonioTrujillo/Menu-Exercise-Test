@@ -162,7 +162,25 @@ article ol li {
   #flexBox {
     flex-direction: column;
     -webkit-flex-direction: column;
-    margin: 40px 40px; } }
+    margin: 40px 40px; }
+
+  .horizontal {
+    width: 60px;
+    height: 60px; }
+
+  button {
+    width: 60px;
+    height: 60px;
+    font-size: 12px; }
+
+  .navCategories {
+    display: none; }
+
+  .prueba {
+    width: 100%; }
+
+  .boxCatalogue {
+    width: 100%; } }
 .column {
   display: flex;
   display: -webkit-flex;

@@ -192,6 +192,26 @@ article ol li {
     -webkit-flex-direction: column;
     margin: 40px 40px;
   }
+  .horizontal {
+  	width: 60px;
+    height: 60px;
+  }
+  button{
+  	width: 60px;
+    height: 60px;
+    font-size: 12px;
+  }
+  .navCategories {
+  	display: none;
+  }
+  .prueba{
+  	width: 100%;
+  }
+  .boxCatalogue{
+  	width: 100%;
+  }
+
+
 }
 
 .column {
@@ -246,6 +266,9 @@ button {
 	width: 314px;
 	height: 183px;
 	float: left;
+}
+.showHideStyle{
+
 }
 
 
